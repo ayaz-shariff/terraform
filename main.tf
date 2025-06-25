@@ -11,6 +11,18 @@ terraform {
   }
  
 }
+variable "access_key" {
+  description = "Huawei Cloud access key"
+  type        = string
+  sensitive   = true
+}
+
+variable "secret_key" {
+  description = "Huawei Cloud secret key"
+  type        = string
+  sensitive   = true
+}
+
 provider "huaweicloud" {
  cloud    = "managedcognitivecloud.com"
  auth_url = "https://iam-pub.me-east-212.managedcognitivecloud.com:443/v3/"
