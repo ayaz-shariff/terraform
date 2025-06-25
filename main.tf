@@ -36,10 +36,7 @@ provider "huaweicloud" {
  access_key = var.access_key
  secret_key = var.secret_key
 }
-resource "huaweicloud_vpc" "testvpc5453" {
- name = "testvpc123"
- cidr = "192.168.0.0/16"
-}
+
 
 data "huaweicloud_compute_flavors" "myflavor" {
   availability_zone = "me-east-212a"
@@ -76,4 +73,9 @@ runcmd:
   - rm -f agent_Install.sh
 EOF
    
+}
+
+resource "huaweicloud_vpc" "testvpc8951" {
+ name = "testvpc8951"
+ cidr = "192.168.0.0/16"
 }
