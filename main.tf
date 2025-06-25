@@ -51,7 +51,4 @@ output "matching_flavor_ids" {
 
 
 
-resource "huaweicloud_vpc" "testvpc9900" {
- name = "testvpc9900"
- cidr = "192.168.0.0/16"
-}
+
